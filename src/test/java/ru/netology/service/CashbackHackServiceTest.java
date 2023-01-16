@@ -32,4 +32,13 @@ public class CashbackHackServiceTest {
         int actual = cashbackHackService.remain(amount);
         Assert.assertEquals(actual, expected);
     }
+
+    @Test
+    public void shouldCalculateRemainWith1_000() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 1000;
+        int expected = 0;
+        int actual = cashbackHackService.remain(amount);
+        Assert.assertEquals(actual, expected);
+    }
 }
